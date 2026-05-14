@@ -1,0 +1,56 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 16px 20px;
+  padding: 12px 24px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.logo-icon {
+  color: var(--color-primary);
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: var(--color-text-light);
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary);
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Mobile menu should be implemented, but hiding for prototype simplicity */
+  }
+}
