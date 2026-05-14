@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { 
-  Users, Building2, Landmark, Globe2, 
-  MapPin, BookOpen, ArrowRight, Recycle, 
-  Droplets, Zap, ChevronRight, Battery, 
+import {
+  Users, Building2, Landmark, Globe2,
+  MapPin, BookOpen, ArrowRight, Recycle,
+  Droplets, Zap, ChevronRight, Battery,
   Coffee, Package, Monitor, HelpCircle,
   Mail, Phone
 } from 'lucide-react';
@@ -11,7 +11,7 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home-wrapper animate-fade-in">
-      
+
       {/* 1. HERO SECTION */}
       <section className="hero-section">
         <div className="hero-background-glow"></div>
@@ -24,7 +24,7 @@ const Home = () => {
               Reciclar nunca fue tan <span className="text-highlight">fácil y claro.</span>
             </h1>
             <p className="hero-description">
-              La primera plataforma ciudadana en Navojoa que elimina las dudas. 
+              La primera plataforma ciudadana en Navojoa que elimina las dudas.
               Encuentra centros de acopio verificados, aprende a separar tus residuos y contribuye a una ciudad más limpia.
             </p>
             <div className="hero-buttons">
@@ -36,7 +36,7 @@ const Home = () => {
                 Catálogo de Materiales
               </Link>
             </div>
-            
+
             <div className="hero-trust">
               <p>Confiado por ciudadanos y centros de:</p>
               <div className="trust-logos">
@@ -50,11 +50,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="hero-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Ciudad Limpia" 
+            <img
+              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Ciudad Limpia"
               className="hero-image"
             />
             <div className="hero-image-card glass-card">
@@ -75,10 +75,10 @@ const Home = () => {
             <h2>¿Qué deseas reciclar hoy?</h2>
             <p>Acceso rápido a las guías más consultadas por la comunidad</p>
           </div>
-          
+
           <div className="materials-grid">
             <Link to="/materiales" className="material-card glass-card">
-              <div className="material-icon-wrapper" style={{background: 'rgba(2, 132, 199, 0.1)', color: '#0284c7'}}>
+              <div className="material-icon-wrapper" style={{ background: 'rgba(2, 132, 199, 0.1)', color: '#0284c7' }}>
                 <Coffee size={32} />
               </div>
               <h3>Plásticos PET</h3>
@@ -87,7 +87,7 @@ const Home = () => {
             </Link>
 
             <Link to="/materiales" className="material-card glass-card">
-              <div className="material-icon-wrapper" style={{background: 'rgba(217, 119, 6, 0.1)', color: '#d97706'}}>
+              <div className="material-icon-wrapper" style={{ background: 'rgba(217, 119, 6, 0.1)', color: '#d97706' }}>
                 <Package size={32} />
               </div>
               <h3>Cartón y Papel</h3>
@@ -96,7 +96,7 @@ const Home = () => {
             </Link>
 
             <Link to="/materiales" className="material-card glass-card">
-              <div className="material-icon-wrapper" style={{background: 'rgba(147, 51, 234, 0.1)', color: '#9333ea'}}>
+              <div className="material-icon-wrapper" style={{ background: 'rgba(147, 51, 234, 0.1)', color: '#9333ea' }}>
                 <Monitor size={32} />
               </div>
               <h3>Electrónicos</h3>
@@ -105,7 +105,7 @@ const Home = () => {
             </Link>
 
             <Link to="/materiales" className="material-card glass-card">
-              <div className="material-icon-wrapper" style={{background: 'rgba(220, 38, 38, 0.1)', color: '#dc2626'}}>
+              <div className="material-icon-wrapper" style={{ background: 'rgba(220, 38, 38, 0.1)', color: '#dc2626' }}>
                 <Battery size={32} />
               </div>
               <h3>Pilas y Baterías</h3>
@@ -127,7 +127,7 @@ const Home = () => {
                 Descargar Kit Hogar <ArrowRight size={20} />
               </Link>
             </div>
-            
+
             <div className="how-steps glass-card">
               <div className="step-row">
                 <div className="step-number-bubble">1</div>
@@ -186,7 +186,7 @@ const Home = () => {
             <h2>Construido por y para la ciudad</h2>
             <p>Wiki Recicla es un ecosistema donde todos participan</p>
           </div>
-          
+
           <div className="roles-grid">
             <div className="role-card glass-card">
               <div className="role-icon-bg"><Users className="role-icon citizen-icon" /></div>
@@ -215,20 +215,20 @@ const Home = () => {
           </div>
           <div className="faq-grid">
             <div className="faq-item glass-card">
-              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)"/> ¿Tiene algún costo usar el mapa?</h4>
+              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)" /> ¿Tiene algún costo usar el mapa?</h4>
               <p>No, Wiki Recicla es una iniciativa comunitaria y será gratuita para siempre, tanto para ciudadanos como para los centros que deseen aparecer.</p>
             </div>
             <div className="faq-item glass-card">
-              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)"/> ¿Los centros compran el material?</h4>
+              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)" /> ¿Los centros compran el material?</h4>
               <p>Depende del centro. En el mapa especificamos qué lugares compran materiales (como aluminio o cartón) y cuáles son solo puntos de donación voluntaria.</p>
             </div>
             <div className="faq-item glass-card">
-              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)"/> Faltan centros en mi colonia, ¿qué hago?</h4>
+              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)" /> Faltan centros en mi colonia, ¿qué hago?</h4>
               <p>¡Ayúdanos a agregarlos! Ve a la sección "Participa" en el menú superior y envíanos los datos del lugar para verificarlo y subirlo al mapa.</p>
             </div>
             <div className="faq-item glass-card">
-              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)"/> ¿Puedo tirar vidrios rotos?</h4>
-              <p>El vidrio roto es peligroso. Visita nuestra sección de "Materiales > Vidrio" para conocer la forma correcta de envolverlo antes de llevarlo al centro.</p>
+              <h4><HelpCircle size={20} className="mr-2 inline" color="var(--color-primary)" /> ¿Puedo tirar vidrios rotos?</h4>
+              <p>El vidrio roto es peligroso. Visita nuestra sección de "Materiales &gt; Vidrio" para conocer la forma correcta de envolverlo antes de llevarlo al centro.</p>
             </div>
           </div>
         </div>
@@ -276,7 +276,7 @@ const Home = () => {
           <h4>Creadores del Proyecto</h4>
           <div className="creators-list">
             <div className="creator">
-              <img src="/creador1.jpeg" alt="Perla Marina" />
+              <img src="public/creador1.jpeg" alt="Perla Marina" />
               <span>Perla Marina</span>
             </div>
             <div className="creator">
